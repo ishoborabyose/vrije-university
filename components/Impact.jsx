@@ -33,14 +33,16 @@ function Impact() {
               <BsArrowRight className="ml-3" />
             </span>
           </div>
-          <div className="flex  items-center justify-end">
-            <div className="flex sm:hidden">
+          <div className="flex gap-[37px] justify-end">
+            <div className="flex items-center sm:hidden">
               {[1, 2, 3, 4].map((item, index) => {
                 return (
                   <div
                     className={`${
-                      index == 0 ? "" : ""
-                    }bg-[#e8692d] rounded-full mx-3 h-[10px] w-[10px]`}
+                      index === 0
+                        ? "w-[20px] bg-[#e8692d] rounded-full mx-3 h-[20px] "
+                        : "w-[10px] bg-[#e8692d] rounded-full mx-3 h-[10px] "
+                    }`}
                   ></div>
                 );
               })}

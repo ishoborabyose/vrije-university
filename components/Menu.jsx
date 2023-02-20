@@ -31,31 +31,31 @@ function Menu() {
               ].map((item) => {
                 return (
                   <div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description4}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description5}
                       </span>
@@ -84,31 +84,31 @@ function Menu() {
               ].map((item) => {
                 return (
                   <div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex items-center justify-between">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description4}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description5}
                       </span>
@@ -137,26 +137,26 @@ function Menu() {
               ].map((item) => {
                 return (
                   <div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between items-center">
                       <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
 
-                    <div className="flex gap-3 mt-12">
+                    <div className="flex gap-3 mt-12 items-center">
                       <BsInstagram className="text-[#0077b3] w-[45px] h-[45px]" />
                       <BsLinkedin className="text-[#0077b3] w-[45px] h-[45px]" />
                       <BsFacebook className="text-[#0077b3] w-[45px] h-[45px]" />

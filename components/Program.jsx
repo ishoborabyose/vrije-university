@@ -5,7 +5,7 @@ function Program() {
   return (
     <div className="relative -top-24 z-10">
       <div className="bg-[#ffffff] p-[85px]"></div>
-      <div className="grid grid-flow-col sm:grid-flow-row  gap-3 sm:px-0 px-[122px] mb-[-98px]  bg-[#faf7f5]">
+      <div className="grid grid-flow-col sm:grid-flow-row  gap-[20px] sm:px-0 px-[122px] mb-[-98px]  bg-[#faf7f5]">
         <div className="bg-white shadow-card-shadow p-[30px] relative -top-20 z-10">
           {[
             {
