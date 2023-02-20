@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wrapper>
-        <Navbar />
+        {/* <Navbar /> */}
         <Become />
       </Wrapper>
       <Students />
@@ -41,7 +41,7 @@ export default function Home() {
         <Amsterdam />
         <Tour />
         <Menu />
-        <Footer />
+        {/* <Footer /> */}
       </Wrapper>
     </>
   );

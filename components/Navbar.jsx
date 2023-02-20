@@ -18,11 +18,13 @@ function Navbar() {
     <>
       <div className="flex justify-between sm:w-full shadow-card-shadow fixed w-[1256px]  z-30 bg-white ">
         <div className="px-[30px] sm:px-0 sm:py-2 py-[15px]">
-          <img
-            src="https://vu.nl/assets/images/VU-logo-nobg.svg"
-            alt="logo"
-            className="w-[185px] h-[45px]"
-          />
+          <Link href="/">
+            <img
+              src="https://vu.nl/assets/images/VU-logo-nobg.svg"
+              alt="logo"
+              className="w-[185px] h-[45px]"
+            />
+          </Link>
         </div>
 
         <div className="flex space-x-6 sm:space-x-2 bg-[#F2EFED] px-[30px] py-6 text-[#333333]">
@@ -47,7 +49,7 @@ function Navbar() {
         </div>
       </div>{" "}
       {show && (
-        <div className="bg-white w-[1256px] shadow-card-shadow fixed z-50 top-0 h-full">
+        <div className="bg-white w-[1256px]  shadow-card-shadow fixed z-50 top-0 h-full">
           <div className="">
             <div className="bg-[#f2efed] p-4 flex w-[70px] cursor-pointer ml-auto">
               <AiOutlineClose
@@ -82,10 +84,10 @@ function Navbar() {
         </div>
       )}
       {shows && (
-        <div className="bg-white pb-10  px-[30px] fixed top-[93px] right-72 w-1/4 shadow-card-shadow  z-50">
-          <AiOutlineCaretUp className="relative -right-72 -top-12 h-20 w-16 text-white" />
+        <div className="bg-white pb-10 sm:top-[77px] px-[30px] fixed top-[93px] right-56  sm:right-10  sm:w-[80%] w-1/4 shadow-card-shadow  z-50">
+          <AiOutlineCaretUp className="relative -right-64 -top-12 sm:-right-48 h-20 w-16 text-white" />
           <AiOutlineClose
-            className="text-[#333333] w-[20px] h-[30px] relative -right-80 cursor-pointer -top-12"
+            className="text-[#333333] w-[20px] h-[30px] relative -right-80 sm:-right-60 cursor-pointer -top-12"
             onClick={() => setShows(!shows)}
           />
           {[

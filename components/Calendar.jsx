@@ -26,23 +26,86 @@ function Calendar() {
           </div>
         </div>
         <div className="sm:overflow-x-scroll sm:max-w-[480px] scroll-bar-hidden">
-          <div className="grid grid-flow-col sm:grid-cols-[repeat(4,_135px)] mt-10">
-            {[1, 2, 3, 4].map((item) => {
+          <div className="grid grid-flow-col gap-3 sm:grid-cols-[repeat(4,_135px)] mt-10">
+            {[
+              {
+                title: "PhD Defences",
+
+                date: "20 February 2023",
+
+                desc1: "PhD defence by T.J.H.",
+                desc2: "Jonkers",
+
+                title2: "Social events",
+
+                title3: "Workshop",
+
+                title5: "Sport",
+
+                date2: "20 February 2023",
+
+                desc4: "Pilates - Life is Better in 3D",
+              },
+            ].map((item) => {
               return (
-                <ul>
-                  <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
-                    PhD Defences
-                  </li>
-                  <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
-                    20 February 2023
-                  </li>
-                  <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
-                    PhD defence by T.J.H.
-                  </li>
-                  <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
-                    Jonkers
-                  </li>
-                </ul>
+                <div className="flex gap-4">
+                  <ul>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title}
+                    </li>
+                    <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
+                      {item.date}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc1}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc2}
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title}
+                    </li>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title2}
+                    </li>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title3}
+                    </li>
+                    <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
+                      {item.date2}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc4}
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title}
+                    </li>
+                    <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
+                      {item.date}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc1}
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
+                      {item.title}
+                    </li>
+                    <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
+                      {item.date}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc1}
+                    </li>
+                    <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
+                      {item.desc2}
+                    </li>
+                  </ul>
+                </div>
               );
             })}
           </div>{" "}

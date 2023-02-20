@@ -16,11 +16,11 @@ function Become() {
           <input
             placeholder="Search..."
             type="search"
-            className="border-b-2 border-b-white  bg-[#0077B3] w-[100%] text-white placeholder-white placeholder:text-[21.96px] placeholder:leading-[34.02px] sm:placeholder:text-[1rem] sm:placeholder:leading-[1.83rem] placeholder:font-light "
+            className="border-b-2 border-b-white outline-none  bg-[#0077B3] w-[100%] text-white placeholder-white placeholder:text-[21.96px] placeholder:leading-[34.02px] sm:placeholder:text-[1rem] sm:placeholder:leading-[1.83rem] placeholder:font-light "
           />
           <CiSearch className="text-white font-black w-7 h-7 pb-1 -ml-6" />
         </div>
-        <div className="p-[20px] flex justify-between bg-[#ffffff]">
+        <div className="p-[20px] flex items-center justify-between bg-[#ffffff]">
           <span className="text-[#0077b3] leading-[30px] text-[22px] font-light">
             About VU Amsterdam
           </span>

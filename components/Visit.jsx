@@ -3,7 +3,7 @@ import React from "react";
 function Visit() {
   return (
     <div className="px-[122px] sm:px-0 bg-white py-[60px]">
-      <div className="py-[45px] bg-[#0077B3] px-[60px] sm:px-4 sm:flex-col flex justify-between">
+      <div className="py-[45px] bg-[#0077B3] px-[60px] sm:px-4 sm:flex-col flex items-center justify-between">
         <h2 className="text-[#ffffff] font-medium sm:text-center leading-[36px] text-[24px]">
           Do you also want to change your world?
         </h2>

@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 import { BsChevronLeft } from "react-icons/bs";
-// import { AiOutlineCaretUp } from "react-icons/ai";
+// import { AiOutlineCaretDown } from "react-icons/ai";
 
 function Impact() {
   return (
@@ -14,9 +14,10 @@ function Impact() {
         <img
           src="https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/883cc0a7-cdf9-41aa-b410-2bce37f7a554/001_VU_com_Davide-Ianuzzi_PeGe_2022_PG006556_lowres%5B28%5D.jpg?w=1250&h=600&fit=clip&rect=336%2C153%2C1664%2C799&fm=jpg&auto=format&dpr=1"
           alt="img"
-          className="w-full"
+          className="w-full h-[575px] object-cover"
         />
-        {/* <AiOutlineCaretUp className=" absolute bottom-60 left-96  h-20 w-16 text-red-800" /> */}
+
+        {/* <AiOutlineCaretDown className=" absolute bottom-56 left-[420px] z-10 h-20 w-16 text-red-300" /> */}
         <div className="bg-[#ffffff]  absolute sm:relative sm:left-0 sm:right-0 sm:-bottom-0 -bottom-14 left-96 right-60">
           <div className="border-b py-2 "></div>
           <div className="pt-[60px]   px-[60px] sm:px-0 pb-[30px]">
@@ -34,9 +35,13 @@ function Impact() {
           </div>
           <div className="flex  items-center justify-end">
             <div className="flex sm:hidden">
-              {[1, 2, 3, 4].map((item) => {
+              {[1, 2, 3, 4].map((item, index) => {
                 return (
-                  <div className="bg-[#e8692d] rounded-full mx-3 h-[10px] w-[10px]"></div>
+                  <div
+                    className={`${
+                      index == 0 ? "" : ""
+                    }bg-[#e8692d] rounded-full mx-3 h-[10px] w-[10px]`}
+                  ></div>
                 );
               })}
             </div>

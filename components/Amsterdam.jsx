@@ -12,18 +12,18 @@ function Amsterdam() {
         </h2>
 
         <div className=" ">
-          <div className="flex">
-            {[1, 2, 3, 4].map((item, index) => {
+          <div className="flex justify-center overflow-hidden">
+            {[1, 2, 3, 4, 5].map((item, index) => {
               return (
                 <div
                   className={` ${
-                    index == 1 ? " " : "sm:hidden block"
-                  } p-[30px] sm:px-0  hover:shadow-card-shadow`}
+                    index == 0 ? " " : "sm:hidden block"
+                  } p-[30px] sm:px-0 ] hover:shadow-card-shadow`}
                 >
                   <img
                     src="https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/af80e288-3224-4918-a78c-14c99e741d32/Gustaaf-Peek_Foto_Maya-Hermes_2134x1600.jpg?fm=jpg&auto=format&dpr=1"
                     alt="image"
-                    className=""
+                    className="max-w-[269px]"
                   />
 
                   <div className="pl-[30px]">
