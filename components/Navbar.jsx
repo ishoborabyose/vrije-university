@@ -53,7 +53,9 @@ function Navbar() {
           <div className="">
             <div className="bg-[#f2efed] p-4 flex w-[70px] cursor-pointer ml-auto">
               <AiOutlineClose
-                className="text-[#333333] w-[20px] h-[30px]"
+                className={`${
+                  show && "rotate-180"
+                } duration-500 text-[#333333] w-[20px]  h-[30px]`}
                 onClick={() => setShow(!show)}
               />
             </div>

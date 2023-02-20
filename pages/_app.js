@@ -16,9 +16,7 @@ export default function App({ Component, pageProps }) {
         <Navbar />
       </Wrapper>
       <Component {...pageProps} />
-      <div className="text-4xl underline text-blue-900 text-center m-auto p-20">
-        New Page
-      </div>
+
       <Wrapper>
         <Footer />
       </Wrapper>
