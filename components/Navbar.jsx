@@ -49,7 +49,7 @@ function Navbar() {
         </div>
       </div>{" "}
       {show && (
-        <div className="bg-white w-[1256px]  shadow-card-shadow fixed z-50 top-0 h-full">
+        <div className="bg-white w-[1256px] sm:w-[100%]  shadow-card-shadow fixed z-50 top-0 h-full">
           <div className="">
             <div className="bg-[#f2efed] p-4 flex w-[70px] cursor-pointer ml-auto">
               <AiOutlineClose
@@ -58,7 +58,7 @@ function Navbar() {
               />
             </div>
 
-            <div className="flex py-56  px-32 w-[419px] h-[450px] pl-[100px] flex-col space-y-10 mr-auto">
+            <div className="flex py-56  px-32 w-[419px] h-[450px] pl-[100px] sm:pl-0 flex-col space-y-10 mr-auto">
               {[
                 "Study at VU Amsterdam",
                 "Research",
