@@ -17,11 +17,11 @@ function Menu() {
               {[
                 {
                   title: "Education",
-                  description1: "Bachelor's program",
-                  description2: "Master's program",
-                  description3: "Honours program",
-                  description4: "Education for proffetionals",
-                  description5: "Study guide",
+                  description1: "Home",
+                  description2: "Education",
+                  description3: "Research",
+                  description4: "About VU Amsterdam",
+                  description5: "University Library",
                 },
               ].map((item) => {
                 return (
@@ -70,11 +70,11 @@ function Menu() {
               {[
                 {
                   title: "Education",
-                  description1: "Bachelor's program",
-                  description2: "Master's program",
-                  description3: "Honours program",
-                  description4: "Education for proffetionals",
-                  description5: "Study guide",
+                  description1: "Contact us",
+                  description2: "People finder",
+                  description3: " Bachelor's degree programmes",
+                  description4: "Master's degree programmes",
+                  description5: " Faculties",
                 },
               ].map((item) => {
                 return (
@@ -123,11 +123,11 @@ function Menu() {
               {[
                 {
                   title: "Education",
-                  description1: "Bachelor's program",
-                  description2: "Master's program",
-                  description3: "Honours program",
-                  description4: "Education for proffetionals",
-                  description5: "Study guide",
+                  description1: "Campus tour",
+                  description2: "Study guide",
+                  description3: "VU Magazine",
+                  description4: "About VU Amsterdam",
+                  description5: "University Library",
                 },
               ].map((item) => {
                 return (
