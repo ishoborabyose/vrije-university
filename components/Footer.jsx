@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="bg-[#0077b3] px-[20px] sm:px-0">
+    <div className="bg-[#0077b3] px-[20px] sm:px-4">
       <div className="py-[30px] mx-[122px]  sm:mx-0 ">
         <div className="justify-between flex flex-wrap">
           {[1, 2, 3, 4, 5, 6].map((item) => {

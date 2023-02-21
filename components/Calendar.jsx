@@ -6,20 +6,20 @@ import { BsChevronLeft } from "react-icons/bs";
 
 function Calendar() {
   return (
-    <div className="bg-white">
+    <div className="bg-white sm:mx-4">
       <div className="mx-[122px] py-[60px] sm:mx-0 sm:px-0 px-[20px]">
         <div className="flex sm:flex-col justify-between">
-          <h2 className="text-[#0077b3] text-[38px] leading-[56px] font-light">
+          <h2 className="text-[#0077b3] text-[38px] sm:text-[30px] leading-[56px] font-light">
             Calendar
           </h2>
-          <div className="flex  space-x-[25px]">
-            {[1, 2].map((item) => {
+          <div className="flex  space-x-[20px]">
+            {["All categories", "Date"].map((item) => {
               return (
-                <div className="bg-[#ffffff] sm:px-0 shadow-card-shadow py-[10px] px-[20px] items-center flex justify-between">
+                <div className="bg-[#ffffff] w-[232px] sm:px-4 shadow-card-shadow py-[10px] px-[20px] items-center flex justify-between">
                   <span className="text-[#333333] text-[18px] font-medium leading-[30px] pr-[30px]">
-                    All categories
+                    {item}
                   </span>
-                  <BsChevronDown className="mr-[20px]" />
+                  <BsChevronDown className="" />
                 </div>
               );
             })}
@@ -48,12 +48,12 @@ function Calendar() {
               },
             ].map((item) => {
               return (
-                <div className="flex gap-4">
+                <div className="flex sm:gap-16  gap-4">
                   <ul>
                     <li className="text-[#333333] text-[18px] leading-[30px] mb-[5px] underline">
                       {item.title}
                     </li>
-                    <li className="text-[#0077b3] text-[18px] leading-[30px] mb-[5px] font-bold">
+                    <li className="text-[#0077b3]  text-[18px] leading-[30px] mb-[5px] font-bold">
                       {item.date}
                     </li>
                     <li className="text-[23.94px] leading-[30px] text-[#333333] font-light">
@@ -115,9 +115,9 @@ function Calendar() {
           <span className="text-[#333333] sm:text-center text-[18px] font-medium leading-[30px] flex  gap-2 items-center ">
             View calendar <BsArrowRight />
           </span>
-          <div className="bg-[#DFF2FD] px-2 py-4 flex sm:hidden ">
-            <BsChevronLeft className="w-10 h-6" />
-            <BsChevronRight className="w-10 h-6" />
+          <div className="bg-[#DFF2FD]  h-[60px] flex items-center w-[120px] px-2   sm:hidden ">
+            <BsChevronLeft className="w-10 h-6 mx-auto" />
+            <BsChevronRight className="w-10 h-6 mx-auto" />
           </div>
         </div>
       </div>

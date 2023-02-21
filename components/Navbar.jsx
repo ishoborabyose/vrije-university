@@ -6,6 +6,7 @@ import { AiOutlineClose, AiOutlineCaretUp } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -14,20 +15,24 @@ function Navbar() {
     document.body.style.overflow = show ? "hidden" : "auto";
     return () => (document.body.style.overflow = "scroll");
   }, [show]);
+
+  const dynamicRoute = useRouter().asPath;
+  useEffect(() => setShow(false), [dynamicRoute]);
+
   return (
     <>
       <div className="flex justify-between sm:w-full shadow-card-shadow fixed w-[1256px]  z-30 bg-white ">
-        <div className="px-[30px] sm:px-0 sm:py-2 py-[15px]">
+        <div className="px-[30px] sm:px-4 sm:py-2 py-[15px]">
           <Link href="/">
             <img
               src="https://vu.nl/assets/images/VU-logo-nobg.svg"
               alt="logo"
-              className="w-[185px] h-[45px]"
+              className="w-[185px] sm:w-[164px] h-[45px]"
             />
           </Link>
         </div>
 
-        <div className="flex space-x-6 sm:space-x-2 bg-[#F2EFED] px-[30px] py-6 text-[#333333]">
+        <div className="flex space-x-6 sm:space-x-2 bg-[#F2EFED] px-[30px] sm:px-[14px] py-6 sm:py-2 text-[#333333]">
           <Link href="/nl">
             <span className="text-[23.94px] leading-[30px] font-light cursor-pointer">
               NL
@@ -36,15 +41,15 @@ function Navbar() {
 
           <CiUser
             onClick={() => setShows(!shows)}
-            className="w-7 h-7 cursor-pointer"
+            className="w-7 h-7 sm:w-[24px] cursor-pointer"
           />
           <Link href="/search">
-            <CiSearch className="w-7 h-7 cursor-pointer" />
+            <CiSearch className="w-7 h-7 sm:w-[24px] cursor-pointer" />
           </Link>
 
           <FiMenu
             onClick={() => setShow(!show)}
-            className="w-7 h-7 cursor-pointer"
+            className="w-7 h-7 sm:w-[22px]  cursor-pointer"
           />
         </div>
       </div>{" "}
@@ -86,10 +91,10 @@ function Navbar() {
         </div>
       )}
       {shows && (
-        <div className="bg-white pb-10 sm:top-[77px] px-[30px] fixed top-[93px] right-56  sm:right-10  sm:w-[80%] w-1/4 shadow-card-shadow  z-50">
-          <AiOutlineCaretUp className="relative -right-64 -top-12 sm:-right-48 h-20 w-16 text-white" />
+        <div className="bg-white pb-10 sm:top-[77px] px-[30px] fixed top-[93px] right-72  sm:right-10  sm:w-[80%] w-1/5 shadow-card-shadow  z-50">
+          <AiOutlineCaretUp className="relative -right-48 -top-12 sm:-right-48 h-20 w-16 text-white" />
           <AiOutlineClose
-            className="text-[#333333] w-[20px] h-[30px] relative -right-80 sm:-right-60 cursor-pointer -top-12"
+            className="text-[#333333]  relative -right-64  sm:-right-60 cursor-pointer -top-12"
             onClick={() => setShows(!shows)}
           />
           {[

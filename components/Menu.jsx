@@ -1,24 +1,19 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import {
-  BsInstagram,
-  BsTwitter,
-  BsFacebook,
-  BsLinkedin,
-  BsYoutube,
-} from "react-icons/bs";
+
+import Social from "./Social";
 
 function Menu() {
   return (
-    <div className="bg-[#ffffff] py-[60px] sm:px-0 px-[20px]">
+    <div className="bg-[#ffffff] sm:py-[35px] py-[60px] sm:px-4 px-[20px]">
       <div className="mx-[122px] sm:mx-0">
         <div className="bg-[#ffffff] "></div>
-        <div className="grid grid-flow-col sm:grid-flow-row gap-10 ">
+        <div className="grid grid-flow-col sm:grid-flow-row sm:gap-0 gap-10 ">
           <div>
-            <span className="text-[#0077b3] text-[38px] mb-[15px] font-light leading-[56px]">
+            <span className="text-[#0077b3] sm:text-[30px] sm:mb-0 text-[38px] mb-[15px] font-light leading-[56px]">
               VU main menu
             </span>
-            <div className="bg-white sm:shadow-none shadow-card-shadow mt-[15px] p-[20px]  ">
+            <div className="bg-white w-[316px] h-[285px] sm:shadow-none shadow-card-shadow sm:mt-0 mt-[15px] p-[20px]  ">
               {[
                 {
                   title: "Education",
@@ -32,31 +27,31 @@ function Menu() {
                 return (
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333] py-[5px] text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333] py-[5px] text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333] py-[5px] text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333] py-[5px] text-[18px] leading-[30px]">
                         {item.description4}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333] py-[5px] text-[18px] leading-[30px]">
                         {item.description5}
                       </span>
                       <BsArrowRight />
@@ -68,10 +63,10 @@ function Menu() {
           </div>
 
           <div>
-            <span className="text-[#cc4100]  mb-[15px] text-[38px] font-light leading-[56px]">
+            <span className="text-[#cc4100] sm:text-[30px] sm:mb-0 mb-[15px] text-[38px] font-light leading-[56px]">
               Most searched
             </span>
-            <div className="bg-white shadow-card-shadow sm:shadow-none  mt-[15px] p-[20px]">
+            <div className="bg-white w-[316px] h-[285px] shadow-card-shadow sm:shadow-none sm:mt-0 mt-[15px] p-[20px]">
               {[
                 {
                   title: "Education",
@@ -85,31 +80,31 @@ function Menu() {
                 return (
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description4}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description5}
                       </span>
                       <BsArrowRight />
@@ -121,10 +116,10 @@ function Menu() {
           </div>
 
           <div>
-            <span className="text-[#008053] text-[38px] mb-[15px] font-light leading-[56px]">
+            <span className="text-[#008053] text-[38px] sm:text-[30px] sm:mb-0 mb-[15px] font-light leading-[56px]">
               Featured
             </span>
-            <div className="bg-white shadow-card-shadow sm:shadow-none  mt-[15px]  p-[20px]">
+            <div className="bg-white shadow-card-shadow w-[316px] h-[285px] sm:shadow-none sm:mt-0  mt-[15px]  p-[20px]">
               {[
                 {
                   title: "Education",
@@ -138,31 +133,25 @@ function Menu() {
                 return (
                   <div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description1}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description2}
                       </span>
                       <BsArrowRight />
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#333333] py-2 text-[18px] leading-[30px]">
+                      <span className="text-[#333333]  py-[5px] text-[18px] leading-[30px]">
                         {item.description3}
                       </span>
                       <BsArrowRight />
                     </div>
 
-                    <div className="flex gap-3 mt-12 items-center">
-                      <BsInstagram className="text-[#0077b3] w-[45px] h-[45px]" />
-                      <BsLinkedin className="text-[#0077b3] w-[45px] h-[45px]" />
-                      <BsFacebook className="text-[#0077b3] w-[45px] h-[45px]" />
-                      <BsTwitter className="text-[#0077b3] w-[45px] h-[45px]" />
-                      <BsYoutube className="text-[#0077b3] w-[45px] h-[45px]" />
-                    </div>
+                    <Social />
                   </div>
                 );
               })}
